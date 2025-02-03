@@ -160,7 +160,7 @@ function draw() {
 				}
 			}
 		}
-		context.font = "42px serif";
+		context.font = "35px serif";
 		context.fillStyle = "#40C000";
 		context.fillRect(260,490,210,75);
 		if (pj == 2) {
@@ -188,13 +188,13 @@ function draw() {
 		context.arc(282.5,512.5,18,0,Math.PI * 2,true);
 		context.closePath();
 		context.fill();	
-		context.fillText(black,310,529);			
+		context.fillText(black,305,529);			
 		context.fillStyle = "#FFFFFF";
 		context.beginPath();
 		context.arc(387.5,512.5,18,0,Math.PI * 2,true);
 		context.closePath();
 		context.fill();
-		context.fillText(white,420,529);
+		context.fillText(white,410,529);
 		context.fillStyle = "#000000";
 		context.font = "28px serif";
 		if (pj == 2){
