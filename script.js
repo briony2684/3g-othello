@@ -160,11 +160,10 @@ function draw() {
 				}
 			}
 		}
-		context.font = "35px serif";
 		context.fillStyle = "#40C000";
 		context.fillRect(260,490,210,75);
 		if (pj == 2) {
-			if (black > white) {								
+			if (black > white) {
 				context.fillStyle = "#808000";
 				context.fillRect(260,490,105,45);
 			}else if (black < white) {
@@ -187,14 +186,26 @@ function draw() {
 		context.beginPath();
 		context.arc(282.5,512.5,18,0,Math.PI * 2,true);
 		context.closePath();
-		context.fill();	
-		context.fillText(black,305,529);			
+		context.fill();
+		if (black < 100) {
+			context.font = "42px serif";
+			context.fillText(black,310,529);
+		}else {
+			context.font = "35px serif";			
+			context.fillText(black,305,529);
+		}
 		context.fillStyle = "#FFFFFF";
 		context.beginPath();
 		context.arc(387.5,512.5,18,0,Math.PI * 2,true);
 		context.closePath();
 		context.fill();
-		context.fillText(white,410,529);
+		if (white < 100) {
+			context.font = "42px serif";
+			context.fillText(white,310,529);
+		}else {
+			context.font = "35px serif";			
+			context.fillText(white,305,529);
+		}
 		context.fillStyle = "#000000";
 		context.font = "28px serif";
 		if (pj == 2){
