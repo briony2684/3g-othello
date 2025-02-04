@@ -201,10 +201,10 @@ function draw() {
 		context.fill();
 		if (white < 100) {
 			context.font = "42px serif";
-			context.fillText(white,310,529);
+			context.fillText(white,415,529);
 		}else {
 			context.font = "35px serif";			
-			context.fillText(white,305,529);
+			context.fillText(white,410,529);
 		}
 		context.fillStyle = "#000000";
 		context.font = "28px serif";
